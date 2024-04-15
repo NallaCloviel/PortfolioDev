@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Righteous&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+@font-face {
+    font-family: Princesa e o sapo;
+    src: url("PrincesS AND THE FROG.ttf") format('truetype');
+}
+
+:root{
+    --cor-de-fundo: #afe1ae;
+    --cor-de-texto: #875211;
+    --cor-cinza: #3a3736;
+    --cor-footer: #6AF268;
+
+    --fonte-cabecalho: 'Righteous', sans-serif;
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-titulo: 'Macondo Swash Caps', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body_habilidades{
+    background-image: url("img/background-dr-facilier.jpg");
+    
+}
+
+.menu, .habilidades_principal {
+    margin: 60px 84px 0px;
+}
+
+.menu__links{
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    justify-content: center;
+}
+
+.menu__link {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.texto_cabecalho {
+    font-family: var(--fonte-cabecalho);
+    font-size: 1.25rem;
+    color: var(--cor-footer);
+    text-decoration: none;
+}
+
+.img-icon{
+    filter: contrast(0) brightness(1.4) opacity(0.8);
+}
+
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+.flip-card {
+    background-color: transparent;
+    width: 160px;
+    height: 207px;
+    perspective: 1000px;
+    flex-grow: 1;
+  }
+
+.img-carta{
+    border-radius: 15px;
+}
+  
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+  }
+  
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+
+.flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 5px;
+    margin-top: 50px;
+    background-color: var(--cor-footer);
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    color: #327100;
+    border-top: 2px solid #F3C400;
+}

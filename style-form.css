@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.timeline {
+    position: relative;
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.event {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.event-date {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.event-description {
+    margin-left: 50px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
