@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Righteous&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+@font-face {
+    font-family: Princesa e o sapo;
+    src: url("PrincesS AND THE FROG.ttf") format('truetype');
+}
 
 :root{
     --cor-de-fundo: #afe1ae;
@@ -10,7 +13,7 @@
 
     --fonte-cabecalho: 'Righteous', sans-serif;
     --fonte-principal: 'Poppins', sans-serif;
-    --fonte-titulo: 'Macondo Swash Caps', cursive;
+    --fonte-titulo: "Princesa e o sapo"
 }
 * {
     margin: 0;
@@ -18,13 +21,13 @@
     box-sizing: border-box;
 }
 
-.body_habilidades{
-    background-image: url("img/background-dr-facilier.jpg");
-    
+body{
+    background-image: url('img/background-princesa-sapo.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.menu, .habilidades_principal {
-    margin: 60px 84px 0px;
+.menu, .principal {
+    padding: 60px 84px 0px;
 }
 
 .menu__links{
@@ -32,6 +35,11 @@
     flex-direction: row;
     gap: 128px;
     justify-content: center;
+}
+
+.menu__link__img{
+    width:30px;
+    height: 30px;
 }
 
 .menu__link {
@@ -44,25 +52,14 @@
 .texto_cabecalho {
     font-family: var(--fonte-cabecalho);
     font-size: 1.25rem;
-    color: var(--cor-footer);
+    color: #875211;
     text-decoration: none;
 }
 
-.img-icon{
-    filter: contrast(0) brightness(1.4) opacity(0.8);
-}
-
-
 .titulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 80px 0 20px;
 }
 
-.imagemTitulo{
-    width: 100vh;
-    height: 50vh;
-}
 .flip-card-container{
     display: flex;
     flex-wrap: wrap;
